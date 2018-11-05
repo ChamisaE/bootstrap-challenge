@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+	<link rel="stylesheet" href="style.css">
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -14,8 +15,8 @@
 	</head>
 	<body>
 		<!--the following creates the navbar-->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Navbar</a>
+		<nav class="navbar navbar-expand-lg flex navbar-light bg-light">
+			<a class="navbar" href="#">Navbar</a>
 			<button class="navbar-toggler"
 					  type="button"
 					  data-toggle="collapse"
@@ -27,35 +28,88 @@
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav mr-auto justify-content-end">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#">Link 1 <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link" href="#">Link 2</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
+						<a class="nav-link disabled" href="#">Link 3</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Link 4</a>
 					</li>
 				</ul>
-<!--				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>-->
 			</div>
 		</nav>
 
 		<!--the following creates a fluid jumbotron with a button-->
-		<div class="jumbotron">
-			<h1 class="display-4">Hello, world!</h1>
+		<div class="jumbotron mx-auto" style="width: 900px;">
+			<h1 class="display-2">Hello, world!</h1>
 			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for
 				calling extra attention to featured content or information.</p>
-			<p class="lead">
-				<a class="btn btn-primary btn-lg" href="#!" role="button">Some action</a>
-			</p>
+			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 		</div>
 
+<!--the following creates a media section with text-->
+		<div class="media container-fluid bg-light">
+			<img class="d-flex mr-3" src="rubberBoots.jpg" alt="Yellow Rubber Boots" height="285.8" width="324.4">
+			<div class="media-body">
+				<h5 class="mt-0">Media heading</h5>
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+				vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+				lacinia congue felis in faucibus.
+			</div>
+		</div>
 
+		<!--the following creates the cards section at the bottom of the page-->
+		<div class="card-group">
+			<div class="card">
+				<img class="rounded-circle" src="redRubberBoots.jpg" alt="Red Rubber Boots" height="175" width="231">
+				<div class="card-body">
+					<h5 class="card-title">Red</h5>
+					<p class="card-text">White dwarf astonishment at the edge of forever from which we spring another world
+						consciousness.</p>
+				</div>
+			</div>
+			<div class="card">
+				<img class="rounded-circle" src="greenRubberBoots.jpg" alt="Green Rubber Boots" height="175" width="231">
+				<div class="card-body">
+					<h5 class="card-title">Green</h5>
+					<p class="card-text"> The sky calls to us a mote of dust suspended in a sunbeam take root and flourish
+						encyclopaedia galactica network of wormholes dispassionate extraterrestrial observer?</p>
+				</div>
+			</div>
+			<div class="card">
+				<img class="rounded-circle" src="blueRubberBoots.png" alt="Blue Rubber Boots" height="175" width="231">
+				<div class="card-body">
+					<h5 class="card-title">Blue</h5>
+					<p class="card-text">Two ghostly white figures in coveralls and helmets are soflty dancing citizens of
+						distant epochs invent the universe kindling the energy hidden in matter invent the universe vastness
+						is bearable only through</p>
+				</div>
+			</div>
+			<div class="card">
+				<img class="rounded-circle" src="polkadotBoots.png" alt="Polka Dot Boots" height="175" width="231">
+				<div class="card-body">
+					<h5 class="card-title">Polka Dots</h5>
+					<p class="card-text">love and billions upon billions upon billions upon billions upon billions upon
+						billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
+				</div>
+			</div>
+		</div>
+
+<!--The following creates a foot bottom for the page-->
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer text-align=center">
+				<p><br/></p>
+				<p>squiggle boot squiggle boot</p>
+				<p><br/></p>
+		</div>
+		</footer>
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
